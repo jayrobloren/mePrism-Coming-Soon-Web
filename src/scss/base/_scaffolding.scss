@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  -webkit-overflow-scrolling: touch;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  color: #000;
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+a,
+area,
+button,
+[role='button'],
+input:not([type='range']),
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+a,
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'],
+[role='button'],
+[role='link'] {
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+  outline: none !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,58 @@
+:root {
+  --grey-base: #000;
+  --grey-middle: #bbb;
+  --grey-light: #c1c1c1;
+
+  --h1-font-size: 60px;
+  --h1-line-height: 71px;
+
+  @include tablet {
+    --h1-font-size: 10vw;
+    --h1-line-height: 1.2;
+  }
+
+  @include laptop {
+    --h1-font-size: 11vw;
+  }
+
+  @include desktop {
+    --h1-font-size: 9vw;
+  }
+
+  @include desktop-hd {
+    --h1-font-size: 8vw;
+  }
+
+  --h2-font-size: 18px;
+  --h2-line-height: 21px;
+
+  @include tablet {
+    --h2-font-size: 3vw;
+    --h2-line-height: 1.2;
+  }
+
+  @include laptop {
+    --h2-font-size: 2vw;
+  }
+
+  @include desktop {
+    --h2-font-size: 2.2vw;
+  }
+
+  @include desktop-hd {
+    --h2-font-size: 2vw;
+  }
+
+  --success-font-size: 60px;
+  --success-line-height: 1.2;
+
+  @include tablet {
+    --success-font-size: 90px;
+  }
+
+  @include laptop {
+    --success-font-size: 7vw;
+  }
+
+  --bottom-gap: 10vw;
+}
