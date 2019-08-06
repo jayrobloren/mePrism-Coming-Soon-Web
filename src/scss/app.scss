@@ -1,7 +1,7 @@
 // base
-@import 'base/mixins';
-@import 'base/index';
-@import 'base/variables';
+@import "base/mixins";
+@import "base/index";
+@import "base/variables";
 
 body {
   @include tablet-max {
@@ -47,6 +47,7 @@ body {
 
 h1 {
   padding-bottom: 25px;
+  padding-top: 25px;
   @include heading-size(var(--h1-font-size), var(--h1-line-height));
 
   span {
@@ -54,6 +55,7 @@ h1 {
   }
 
   @include laptop {
+    padding-top: 0;
     padding-bottom: 0;
   }
 }
@@ -101,7 +103,7 @@ h2 {
   border-radius: 8px;
   transition: 0.2s ease;
 
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-size: 16px;
   line-height: 18px;
 
@@ -153,7 +155,7 @@ h2 {
     left: 0;
   }
 
-  @include img-position(60vw, -10vw, -8vw);
+  @include img-position(60vw, -15vw, -10vw);
 
   @include iphone-sm {
     @include size(50vw);
@@ -181,19 +183,19 @@ h2 {
   }
 
   @include laptop {
-    @include img-position(34vw, -10vw, -6vw);
+    @include img-position(34vw, -11vw, -6vw);
   }
 
   @include desktop {
-    @include img-position(32vw, -9vw, -4vw);
+    @include img-position(32vw, -10vw, -4vw);
   }
 
   @media screen and (min-width: 1700px) {
-    @include img-position(29vw, -9vw, -3vw);
+    @include img-position(29vw, -10vw, -3vw);
   }
 
   @include desktop-hd {
-    @include img-position(30vw, -9vw, -4vw);
+    @include img-position(30vw, -10vw, -4vw);
   }
 }
 

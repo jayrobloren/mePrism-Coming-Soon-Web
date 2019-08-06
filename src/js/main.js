@@ -20,8 +20,7 @@ window.onload = e => {
     var result = reExpress.test(String(email).toLowerCase());
 
     if (result) {
-      console.log(input.value);
-      // send here
+      sendData(email);
       showTyped();
       if (mobile) {
         input.blur();
@@ -65,3 +64,25 @@ window.onload = e => {
     showTyped();
   };
 };
+
+const sendData = email => {
+  const data = {
+    email_address: email,
+    status: "subscribed"
+  };
+
+  fetch("https://us3.api.mailchimp.com/3.0/lists/40008a7d7a/members", {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      "Content-Type": "application/json",
+      authorization: "apikey d4e83080955451a61de5fda1e8295b55-us3"
+    },
+    body: JSON.stringify(data)
+  }).then(response => response.json());
+};
+
+// desktop move circle 1 vw
+// fonts
+// mobile move circle left+top
+// move texts by 25px to the bottom
