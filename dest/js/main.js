@@ -59,10 +59,6 @@ window.onload = function (e) {
       });
     });
   };
-
-  img.onclick = function () {
-    showTyped();
-  };
 };
 
 var sendData = function sendData(email) {
@@ -81,7 +77,4 @@ var sendData = function sendData(email) {
   }).then(function (response) {
     return response.json();
   });
-}; // desktop move circle 1 vw
-// fonts
-// mobile move circle left+top
-// move texts by 25px to the bottom
+};

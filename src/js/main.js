@@ -59,10 +59,6 @@ window.onload = e => {
       });
     });
   };
-
-  img.onclick = () => {
-    showTyped();
-  };
 };
 
 const sendData = email => {
@@ -81,8 +77,3 @@ const sendData = email => {
     body: JSON.stringify(data)
   }).then(response => response.json());
 };
-
-// desktop move circle 1 vw
-// fonts
-// mobile move circle left+top
-// move texts by 25px to the bottom
