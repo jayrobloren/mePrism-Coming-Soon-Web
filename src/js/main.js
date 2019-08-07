@@ -62,18 +62,11 @@ window.onload = e => {
 };
 
 const sendData = email => {
-  const data = {
-    email_address: email,
-    status: "subscribed"
-  };
-
-  fetch("https://us3.api.mailchimp.com/3.0/lists/40008a7d7a/members", {
+  fetch("https://meprism-proxy.herokuapp.com/mailchimp", {
     method: "POST",
-    mode: "cors",
     headers: {
-      "Content-Type": "application/json",
-      authorization: "apikey d4e83080955451a61de5fda1e8295b55-us3"
+      "Content-Type": "application/json"
     },
-    body: JSON.stringify(data)
+    body: JSON.stringify({ email })
   }).then(response => response.json());
 };
