@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017"],
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "target": "es2017"
+  },
+  "compileOnSave": true,
+  "include": ["src"]
+}

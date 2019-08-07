@@ -1,0 +1,57 @@
+[debug] [2019-08-07T12:10:40.433Z] ----------------------------------------------------------------------
+[debug] [2019-08-07T12:10:40.434Z] Command:       /Users/bohdandenysiuk/.nvm/versions/node/v10.16.0/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2019-08-07T12:10:40.435Z] CLI Version:   7.1.0
+[debug] [2019-08-07T12:10:40.435Z] Platform:      darwin
+[debug] [2019-08-07T12:10:40.435Z] Node Version:  v10.16.0
+[debug] [2019-08-07T12:10:40.435Z] Time:          Wed Aug 07 2019 15:10:40 GMT+0300 (Eastern European Summer Time)
+[debug] [2019-08-07T12:10:40.435Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-07T12:10:40.442Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-07T12:10:40.442Z] > authorizing via signed-in user
+[debug] [2019-08-07T12:10:40.443Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/meprism-promo  
+ 
+[debug] [2019-08-07T12:10:40.697Z] <<< HTTP RESPONSE 200
+[info] i  Starting emulators: ["functions"]
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-08-07T12:10:40.714Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/meprism-promo/adminSdkConfig  
+ 
+[debug] [2019-08-07T12:10:40.964Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/bohdandenysiuk/dev/own/mePrism/functions" for Cloud Functions...
+[debug] [2019-08-07T12:10:41.456Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/bohdandenysiuk/dev/own/mePrism/functions","node_version":"10.16.0"}
+[debug] [2019-08-07T12:10:41.456Z] [runtime-status] Disabled runtime features: undefined {}
+[debug] [2019-08-07T12:10:41.458Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-07T12:10:41.459Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T12:10:41.565Z] [runtime-status] Found google-gax at /Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/google-gax/build/src/index.js {}
+[debug] [2019-08-07T12:10:41.565Z] [runtime-status] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2019-08-07T12:10:41.591Z] [runtime-status] Checked functions.config() {"config":{}}
+[debug] [2019-08-07T12:10:41.591Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T12:10:41.592Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-07T12:10:41.592Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/firebase-admin/lib/index.js"}}
+[info] i  functions: HTTP trigger initialized at http://localhost:5001/meprism-promo/us-central1/api
+[debug] [2019-08-07T12:10:43.976Z] Accepted request POST /meprism-promo/us-central1/api/mailchimp --> api
+[debug] [2019-08-07T12:10:44.210Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/bohdandenysiuk/dev/own/mePrism/functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-07T12:10:44.211Z] [runtime-status] Disabled runtime features: undefined {}
+[debug] [2019-08-07T12:10:44.215Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-07T12:10:44.215Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T12:10:44.339Z] [runtime-status] Found google-gax at /Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/google-gax/build/src/index.js {}
+[debug] [2019-08-07T12:10:44.339Z] [runtime-status] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2019-08-07T12:10:44.368Z] [runtime-status] Checked functions.config() {"config":{}}
+[debug] [2019-08-07T12:10:44.368Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-07T12:10:44.369Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-07T12:10:44.369Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/bohdandenysiuk/dev/own/mePrism/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2019-08-07T12:10:44.416Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-07T12:10:44.417Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-07T12:10:44.417Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-07T12:10:44.417Z] [default-admin-app-used]  {"databaseURL":"https://meprism-promo.firebaseio.com","storageBucket":"meprism-promo.appspot.com","projectId":"meprism-promo","credential":{}}
+[debug] [2019-08-07T12:10:44.417Z] [runtime-status] Intializing default app. {"databaseURL":"https://meprism-promo.firebaseio.com","storageBucket":"meprism-promo.appspot.com","projectId":"meprism-promo","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-07T12:10:44.422Z] {"socketPath":"/var/folders/bt/hbcnm01d6yl25g2tpfnljqf80000gn/T/firebase_emulator_invocation_71821.sock"}
+[debug] [2019-08-07T12:10:44.423Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/bt/hbcnm01d6yl25g2tpfnljqf80000gn/T/firebase_emulator_invocation_71821.sock"}
+[debug] [2019-08-07T12:10:44.436Z] [runtime-status] Ephemeral server used! {}
+[warn] ⚠  Unknown network resource requested!
+   - URL: "https://us18.api.mailchimp.com/3.0/lists/c4134a41f4/members"
+[debug] [2019-08-07T12:10:44.456Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
