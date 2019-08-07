@@ -1,5 +1,5 @@
 import * as express from "express";
-import asyncHandler from "express-async-handler";
+import * as asyncHandler from "express-async-handler";
 import fetch from "node-fetch";
 
 const URL = "https://us18.api.mailchimp.com/3.0/lists/c4134a41f4/members";
