@@ -152,7 +152,7 @@ h2 {
   top: -50px;
   left: -80px;
 
-  @include size(80vw);
+  @include size(73vw);
 
   @include iphone-sm {
     @include size(70vw);
@@ -214,8 +214,17 @@ h2 {
   }
 }
 
+.img-lines.is-mobile-chrome {
+  bottom: calc(var(--vh, 1vh) * 20);
+}
+
 .was-sent p {
   display: none;
+}
+
+.was-sent,
+.is-content {
+  position: relative;
 }
 
 .was-sent,

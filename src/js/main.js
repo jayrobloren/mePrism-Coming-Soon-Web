@@ -11,8 +11,14 @@ window.onload = e => {
     document.querySelector("body").classList.add("isIos");
   }
 
-  if (mobile) {
-    input.setAttribute("autofocus", false);
+  if (!mobile) {
+    input.focus();
+  }
+
+  if (!isSafari && mobile) {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+    document.querySelector(".img-lines").classList.add("is-mobile-chrome");
   }
 
   const validateEmail = email => {

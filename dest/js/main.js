@@ -13,8 +13,14 @@ window.onload = function (e) {
     document.querySelector("body").classList.add("isIos");
   }
 
-  if (mobile) {
-    input.setAttribute("autofocus", false);
+  if (!mobile) {
+    input.focus();
+  }
+
+  if (!isSafari && mobile) {
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", "".concat(vh, "px"));
+    document.querySelector(".img-lines").classList.add("is-mobile-chrome");
   }
 
   var validateEmail = function validateEmail(email) {
