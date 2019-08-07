@@ -32,7 +32,7 @@ router.post(
         body: JSON.stringify(data)
       });
 
-      resp.status(200).send({ success: true, message: response.body });
+      resp.status(200).send({ success: true, message: response });
     } catch (e) {
       resp.status(400).send({ error: true, message: e });
     }
