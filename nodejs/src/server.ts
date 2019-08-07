@@ -1,9 +1,12 @@
 import * as express from "express";
+import * as bodyParser from "body-parser";
+
 import log from "./log";
 
 import mailchimpRouter from "./routers/mailchimp";
 
 const app = express();
+app.use(bodyParser.json());
 
 app.use("/mailchimp", mailchimpRouter);
 
