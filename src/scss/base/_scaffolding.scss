@@ -39,8 +39,8 @@ a {
 a,
 area,
 button,
-[role='button'],
-input:not([type='range']),
+[role="button"],
+input:not([type="range"]),
 label,
 select,
 summary,
@@ -55,11 +55,11 @@ img {
 
 a,
 button,
-html [type='button'],
-[type='reset'],
-[type='submit'],
-[role='button'],
-[role='link'] {
+html [type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"],
+[role="link"] {
   appearance: none;
   -webkit-appearance: none;
   box-shadow: none;
@@ -76,4 +76,5 @@ h1,
 h2 {
   margin: 0;
   padding: 0;
+  font-weight: 400;
 }

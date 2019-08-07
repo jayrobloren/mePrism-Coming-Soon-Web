@@ -20,6 +20,7 @@ body {
   display: flex;
   height: 100vh;
   align-items: center;
+  justify-content: center;
 }
 
 .is-content {
@@ -32,12 +33,10 @@ body {
   @include laptop {
     width: auto;
     margin-top: -2vw;
-    margin-left: -4vw;
   }
 
   @include desktop-hd {
     margin-top: -3vw;
-    margin-left: -2vw;
   }
 
   &.is-hidden {
@@ -149,24 +148,22 @@ h2 {
   object-fit: contain;
   object-position: center;
 
-  @include tablet-max {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  position: absolute;
+  top: -50px;
+  left: -80px;
 
-  @include img-position(60vw, -15vw, -10vw);
+  @include size(80vw);
 
   @include iphone-sm {
-    @include size(50vw);
+    @include size(70vw);
   }
 
   @include iphone-md {
-    @include size(51vw);
+    @include size(75vw);
   }
 
   @include iphone-lg {
-    @include size(53vw);
+    @include size(70vw);
   }
 
   @include tablet {
@@ -183,19 +180,10 @@ h2 {
   }
 
   @include laptop {
-    @include img-position(34vw, -11vw, -6vw);
-  }
+    @include size(33vw);
 
-  @include desktop {
-    @include img-position(32vw, -10vw, -4vw);
-  }
-
-  @media screen and (min-width: 1700px) {
-    @include img-position(29vw, -10vw, -3vw);
-  }
-
-  @include desktop-hd {
-    @include img-position(30vw, -10vw, -4vw);
+    top: 6vw;
+    left: -13vw;
   }
 }
 
@@ -272,5 +260,10 @@ h2 {
 }
 
 .typed-cursor {
+  display: none;
+}
+
+.was-sent,
+#typed {
   display: none;
 }
