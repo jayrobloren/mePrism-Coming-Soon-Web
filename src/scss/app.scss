@@ -1,7 +1,7 @@
 // base
-@import "base/mixins";
-@import "base/index";
-@import "base/variables";
+@import 'base/mixins';
+@import 'base/index';
+@import 'base/variables';
 
 body {
   @include tablet-max {
@@ -13,6 +13,11 @@ body {
     width: 100%;
     height: 100%;
   }
+
+  @include mobileLandscape {
+    position: static;
+    overflow: auto;
+  }
 }
 
 .is-main {
@@ -21,6 +26,10 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
+
+  @include mobileLandscape {
+    height: 600px;
+  }
 }
 
 .is-content {
@@ -102,7 +111,7 @@ h2 {
   border-radius: 8px;
   transition: 0.2s ease;
 
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-size: 16px;
   line-height: 18px;
 
@@ -152,18 +161,27 @@ h2 {
   top: -50px;
   left: -80px;
 
-  @include size(73vw);
+  // @include size(73vw);
+  @include size(60vw);
 
-  @include iphone-sm {
-    @include size(70vw);
+  @include mobileLandscape {
+    @include size(40vw);
   }
 
-  @include iphone-md {
-    @include size(75vw);
-  }
+  // @include iphone-sm {
+  //   @include size(70vw);
+  // }
+
+  // @include iphone-md {
+  //   @include size(75vw);
+  // }
 
   @include iphone-lg {
-    @include size(70vw);
+    @include size(63vw);
+  }
+
+  @include iphone-x {
+    @include size(73vw);
   }
 
   @include tablet {
@@ -193,11 +211,10 @@ h2 {
   right: 0;
   bottom: 0px;
 
-  display: block;
-  max-width: 100%;
+  width: 100%;
   height: 50px;
-
-  object-fit: cover;
+  background-size: cover;
+  background-image: url('./../img/lines.png');
 
   @media screen and (min-width: 370px) {
     bottom: 20px;
@@ -209,8 +226,7 @@ h2 {
 
   @include laptop {
     bottom: 50px;
-    height: auto;
-    object-fit: contain;
+    background-size: contain;
   }
 }
 
@@ -275,4 +291,17 @@ h2 {
 .was-sent,
 #typed {
   display: none;
+}
+
+.img-lines {
+  animation: slide 15s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 2000px;
+  }
 }

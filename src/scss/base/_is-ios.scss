@@ -23,9 +23,5 @@ $classname: 'is-main';
     @include ipad {
       height: calc(100vh - 50px);
     }
-
-    @include ipad-landscape {
-      height: auto;
-    }
   }
 }

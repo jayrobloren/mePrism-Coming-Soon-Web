@@ -132,6 +132,12 @@ $desktop-2k: 2400px !default;
   }
 }
 
+@mixin mobileLandscape {
+  @media screen and (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
 @function contains($list, $values...) {
   @each $value in $values {
     @if type-of(index($list, $value)) != 'number' {
