@@ -6,8 +6,8 @@
   "scripts": {
     "start": "gulp",
     "images": "gulp imageMin",
-    "node-deploy": "git subtree push --prefix nodejs heroku master",
-    "hosting-deploy": "firebase deploy --only hosting"
+    "deploy:node": "git subtree push --prefix nodejs heroku master",
+    "deploy:web": "git subtree push --prefix dest heroku master"
   },
   "author": "Kotuhan",
   "license": "MIT",
